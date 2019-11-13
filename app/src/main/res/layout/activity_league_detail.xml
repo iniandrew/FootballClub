@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.LeagueDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:padding="16dp">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/img_league_badge"
+            android:layout_width="150dp"
+            android:layout_height="175dp"
+            android:contentDescription="@string/image"
+            tools:src="@tools:sample/avatars"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_league_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/img_league_badge"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:layout_marginBottom="16dp"
+            android:textSize="24sp"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@id/img_league_badge" />
+
+        <TextView
+            android:id="@+id/tv_description_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@tools:sample/lorem/random"
+            android:textAlignment="gravity"
+            android:layout_below="@id/tv_description"/>
+    </RelativeLayout>
+
+</ScrollView>
